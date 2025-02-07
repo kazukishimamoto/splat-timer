@@ -1,47 +1,59 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import Timer from './components/Timer.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
+    <h1>Splat Timer</h1>
+    <p class="description">
+      Splat Timer
+      は、スプラトゥーンのナワバリバトルで残り時間を把握するためのタイマーです。
+      ナワバリバトルでは、塗り状況と残り時間を適宜把握することが重要なため、残り時間と試合運びのポイントをアナウンスして勝てるようにサポートします。
+    </p>
   </header>
 
   <main>
-    <TheWelcome />
+    <Timer />
   </main>
 </template>
 
 <style scoped>
 header {
   line-height: 1.5;
+  text-align: center;
+  margin-top: 1rem;
+  color: #ffffff; /* 白色 */
+  background-color: #333333; /* ダークグレー */
+  width: 100%;
+  padding: 1rem 0;
+  box-sizing: border-box;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.description {
+  margin: 1rem 0;
+  padding: 0 1rem;
+  color: #cccccc; /* ライトグレー */
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 4rem); /* ヘッダーの高さを引いた高さ */
+  background-color: #333333; /* ダークグレー */
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  max-width: 600px;
+  margin: 0 auto;
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+@media (min-width: 768px) {
+  main {
+    max-width: 600px;
+    margin: 0 auto;
   }
 }
 </style>
