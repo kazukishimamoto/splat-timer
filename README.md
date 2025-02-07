@@ -1,33 +1,35 @@
-# splat-timer
+# Splat Timer
 
-This template should help get you started developing with Vue 3 in Vite.
+Splat Timer は、スプラトゥーンのナワバリバトルで残り時間を把握するためのタイマーです。ナワバリバトルでは、塗り状況と残り時間を適宜把握することが重要なため、残り時間と試合運びのポイントをアナウンスして勝てるようにサポートします。
 
-## Recommended IDE Setup
+## 機能
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- 3 分間のカウントダウンタイマー
+- 残り半分、1 分、35 秒のタイミングで音声アナウンス
+- タイマーの進捗を視覚的に表示
 
-## Type Support for `.vue` Imports in TS
+## 推奨開発環境
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (Vetur を無効にしてください)
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+## プロジェクトセットアップ
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### 開発用のコンパイルとホットリロード
 
 ```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+### 本番用のタイプチェック、コンパイル、ミニファイ
 
 ```sh
 npm run build
 ```
+
+## Vite 設定のカスタマイズ
+
+詳細は [Vite Configuration Reference](https://vite.dev/config/) を参照してください。
